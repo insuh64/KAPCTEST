@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="header">
+
+        <div onclick="show_hide(a)" id="hamburger">
+            <svg viewBox="0 0 100 100" width="30" height="30">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect>
+            </svg>
+        </div>
+
+        <a id="logolink" href="index.html"><img src="images/logo.svg" alt="" id="logo"></a>
+
+        <div id="navigation">
+
+            <div class="dropdown">
+                <button onclick="drop_down(b)" class="mainSection"><a class="topLinks" href="index.html">I. 노회 소개 Introduction</a></button>
+
+                <div class="content" id="icontent">
+                    <a class="subSection" href="">1. 인사말</a>
+                    <a class="subSection" href="">2. 노회 소개</a>
+                    <a class="subSection" href="">3. 역대 노회 Past Presbytery Meetings</a>
+                    <a class="subSection" href="">4. 역대임원 Past Officers</a>
+                    <a class="subSection" href="">5. 역대 사진 Historical photos</a>
+                    <a class="subSection" href="">6. 노회 규칙 Rules</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button onclick="drop_down2(c)" class="mainSection"><a class="topLinks" href="">II. 노회 조직</a></button>
+
+                <div class="content" id="iicontent">
+                    <a href="" class="subSection">1. 노회 임원 Officers</a>
+
+                    <div class="dropdown2">
+                        <a href="" class="subSection2">2. 회원명단:  공로목사</a>
+                            <div class="content2">
+                                <a href="" class="subsub">a. 원로목사</a>
+                                <a href="" class="subsub">c. 담임 목사</a>
+                                <a href="" class="subsub">d. 부목사, 교육목사</a>
+                                <a href="" class="subsub">e. 선교사</a>
+                                <a href="" class="subsub">f. 선교 목사, 전도목사</a>
+                                <a href="" class="subsub">g. 군목, 무임목사</a>
+                            </div>
+                    </div>
+
+                    <a href="" class="subSection">3. 상비부 Standing Department</a>
+
+                    <div class="dropdown2">
+                        <a href="" class="subSection2">4. 시찰회</a>
+                            <div class="content2">
+                                <a href="" class="subsub">a. 북부시찰</a>
+                                <a href="" class="subsub">b. 중부시찰</a>
+                                <a href="" class="subsub">c. 동부시찰</a>
+                                <a href="" class="subsub">d. 남부시찰</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button onclick="drop_down3(d)" class="mainSection"><a class="topLinks" href="">III. 산하기관</a></button>
+
+                <div class="content" id="iiicontent">
+                    <a class="subSection" href="">1. 중부신학교 Midwest Presbytery Seminary</a>
+                    <a class="subSection" href="">2. 노회 지교회 홈페이지</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button onclick="drop_down4(e)" class="mainSection"><a class="topLinks" href="">IV. 헌법 Church Order</a></button>
+
+                <div class="content" id="ivcontent">
+                    <a class="subSection" href="">1. 12 신조 The Creed</a>
+                    <a class="subSection" href="">2. 웨스트민스터 신앙고백</a>
+                    <a class="subSection" href="">3. 대요리 문답 Larger Catechism</a>
+                    <a class="subSection" href="">4. 소요리 문답 Shorter Catechism</a>
+                    <a class="subSection" href="">5. 정치 Form of Government</a>
+                    <a class="subSection" href="">6. 헌법적 규칙 Constitutional Rules</a>
+                    <a class="subSection" href="">7. 권징 조례 Rules of Discipline</a>
+                    <a class="subSection" href="">8. 예배 모범 Worship Directory</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button onclick="drop_down5(f)" class="mainSection"><a class="topLinks" href="">V. 노회 자료 Resources</a></button>
+
+                <div class="content" id="vcontent">
+                    <a href="" class="subSection">1. 서식 Forms</a>
+                    <a href="" class="subSection">2. 일반자료 (노회 회의록)</a>
+
+                    <div class="dropdown2">
+                        <a href="" class="subSection2">3. 역사자료</a>
+                            <div class="content2">
+                                <a href="" class="subsub">a. 역대 노회 개회 예배 성찬예식 집례자</a>
+                                <a href="" class="subsub">c. 역대 노회 참석 노회 회원 및 장로 총대</a>
+                                <a href="" class="subsub">d. 노회장 인터뷰</a>
+                                <a href="" class="subsub">e. 노회 출신 역대 총회장</a>
+                                <a href="" class="subsub">f. 노회 사진</a>
+                            </div>
+                    </div>
+
+                    <a href="" class="subSection">4. 노회 및 교회 파송 선교사 와 파송 군목</a>
+                    <a href="" class="subSection">5. 행사 동영상</a>
+                    <a href="" class="subSection">6. 포토앨범</a>
+                    <a href="" class="subSection">7. 목회 정보 보기 View Pastoral Information</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button onclick="drop_down6(g)" class="mainSection"><a class="topLinks" href="">VI. 소통 Communication</a></button>
+
+                <div class="content" id="vicontent">
+                    <a class="subSection" href="">1. 공지사항 Notice</a>
+                    <a class="subSection" href="">2. 상비부 소식</a>
+                    <a class="subSection" href="">3. 청빙 공고 Announce for a Call</a>
+                    <a class="subSection" href="">4. 부고 Obituary</a>
+                    <a class="subSection" href="">5. 소식 News</a>
+                    <a class="subSection" href="">6. 신학교 학생 모집 공고 Seminary Announcement</a>
+                    <a class="subSection" href="">7. MWP PK, MK, EK Connection</a>
+                    <a class="subSection" href="">8. 알아두면 좋은 이야기</a>
+                </div>
+            </div>
+            
+
+            <div class="dropdown">
+                <button class="mainSection"><a class="topLinks" href="">VII. 연락처 Contacts</a></button>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+
+<script>
+
+    let a = 0;
+    let b = 1;
+    let c = 1;
+    let d = 1;
+    let e = 1;
+    let f = 1;
+    let g = 1;
+
+    function show_hide() {
+        if (a === 1) {
+            document.getElementById("navigation").style.display = "flex";
+            return a = 0;
+        } else {
+            document.getElementById("navigation").style.display = "none";
+            return a = 1;
+        }
+    }
+
+    function drop_down() {
+        if (b === 1) {
+            document.getElementById("icontent").style.display = "flex";
+            return b = 0;
+        } else {
+            document.getElementById("icontent").style.display = "none";
+            return b = 1;
+        }
+    }
+
+    function drop_down2() {
+        if (c === 1) {
+            document.getElementById("iicontent").style.display = "flex";
+            return c = 0;
+        } else {
+            document.getElementById("iicontent").style.display = "none";
+            return c = 1;
+        }
+    }
+
+    function drop_down3() {
+        if (d === 1) {
+            document.getElementById("iiicontent").style.display = "flex";
+            return d = 0;
+        } else {
+            document.getElementById("iiicontent").style.display = "none";
+            return d = 1;
+        }
+    }
+
+    function drop_down4() {
+        if (e === 1) {
+            document.getElementById("ivcontent").style.display = "flex";
+            return e = 0;
+        } else {
+            document.getElementById("ivcontent").style.display = "none";
+            return e = 1;
+        }
+    }
+
+    function drop_down5() {
+        if (f === 1) {
+            document.getElementById("vcontent").style.display = "flex";
+            return f = 0;
+        } else {
+            document.getElementById("vcontent").style.display = "none";
+            return f = 1;
+        }
+    }
+
+    function drop_down6() {
+        if (g === 1) {
+            document.getElementById("vicontent").style.display = "flex";
+            return g = 0;
+        } else {
+            document.getElementById("vicontent").style.display = "none";
+            return g = 1;
+        }
+    }
+
+
+</script>
+
+
+</html>
