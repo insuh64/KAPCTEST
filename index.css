@@ -2,6 +2,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: hsla(305, 47%, 90%, 0.788);
+    font-size: 16px;
+    font-family: sans-serif;
 }
 
 #highlight {
@@ -47,12 +49,13 @@ body {
 }
 
 .mainSection {
+    font-size: inherit;
     margin: 0;
     padding: 0;
     display: flex;
     color: black;
     height: 4rem;
-    width: 11rem;
+    width: 12rem;
     background: none;
     text-decoration: none;
     cursor: pointer;
@@ -60,6 +63,7 @@ body {
 }
 
 .content, .content2 {
+    font-size: inherit;
     display: none;
     background-color: hsl(0, 0%, 97%);
     position: absolute;
@@ -102,7 +106,7 @@ body {
     background-color: hsl(0, 0%, 90%);
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1520px) {
 
     body {
         -webkit-transition: all 1s ease;
@@ -180,6 +184,14 @@ body {
     .mainSection, .subSection, .subSection2, .subsub {
         display: flex;
         width: 100%;
+    }
+
+    .subSection, .subSection2 {
+        padding-left: 2.5rem;
+    }
+
+    .subsub {
+        padding-left: 3rem;
     }
 
     .content, .content2 {
