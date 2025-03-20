@@ -55,7 +55,8 @@ body {
     display: flex;
     color: black;
     height: 4rem;
-    width: 12rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     background: none;
     text-decoration: none;
     cursor: pointer;
@@ -117,6 +118,7 @@ body {
 
     .mainSection {
         align-items: center;
+        padding: 0;
     }
 
     .topLinks {
